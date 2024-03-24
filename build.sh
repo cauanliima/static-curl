@@ -17,7 +17,7 @@ then
     # for gpg verification of the curl download below
     apk add gnupg
 
-    wget https://curl.haxx.se/download/curl-${CURL_VERSION}.tar.gz https://curl.haxx.se/download/curl-${CURL_VERSION}.tar.gz.asc
+    wget https://curl.se/download/curl-${CURL_VERSION}.tar.gz https://curl.se/download/curl-${CURL_VERSION}.tar.gz.asc
 
     # convert mykey.asc to a .pgp file to use in verification
     gpg --no-default-keyring --yes -o ./curl.gpg --dearmor mykey.asc
